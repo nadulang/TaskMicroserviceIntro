@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerServices", "TaskMicroservices\CustomerServices.csproj", "{A9C3E5E8-BA08-49F9-A954-B113BA038058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9C3E5E8-BA08-49F9-A954-B113BA038058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C3E5E8-BA08-49F9-A954-B113BA038058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C3E5E8-BA08-49F9-A954-B113BA038058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C3E5E8-BA08-49F9-A954-B113BA038058}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
