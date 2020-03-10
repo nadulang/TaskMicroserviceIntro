@@ -9,7 +9,7 @@ using ProductsServices.Infrastructure.Persistences;
 namespace ProductsServices.Migrations
 {
     [DbContext(typeof(ProductContext))]
-    [Migration("20200310023106_AddProducts")]
+    [Migration("20200310073038_AddProducts")]
     partial class AddProducts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

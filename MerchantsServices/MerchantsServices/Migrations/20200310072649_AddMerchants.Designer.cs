@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MerchantsServices.Migrations
 {
     [DbContext(typeof(MerchantContext))]
-    [Migration("20200310022210_AddMerchants")]
+    [Migration("20200310072649_AddMerchants")]
     partial class AddMerchants
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
