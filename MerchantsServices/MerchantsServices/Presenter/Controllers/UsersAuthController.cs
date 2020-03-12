@@ -12,7 +12,6 @@ namespace MerchantsServices.Presenter.Controllers
 {
     [ApiController]
     [Route("api/auth")]
-    [Authorize]
 
     public class UsersAuthController : ControllerBase
     {

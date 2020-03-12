@@ -12,7 +12,7 @@ namespace CustomerServices.Presenter.Controllers
 {
     [ApiController]
     [Route("api/auth")]
-    [Authorize]
+    //[Authorize]
 
     public class UsersAuthController : ControllerBase
     {

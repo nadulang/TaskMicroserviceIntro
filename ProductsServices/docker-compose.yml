@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  productsservices:
+    image: ${DOCKER_REGISTRY-}productsservices
+    build:
+      context: .
+      dockerfile: ProductsServices/Dockerfile

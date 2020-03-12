@@ -23,7 +23,6 @@ using MerchantsServices.Application.Models.Query;
 namespace MerchantsServices.Presenter.Controllers
 {
     [ApiController]
-    [Authorize]
     [Route("api/Merchants")]
 
     public class MerchantsController : ControllerBase

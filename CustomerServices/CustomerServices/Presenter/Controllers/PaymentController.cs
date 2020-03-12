@@ -12,7 +12,7 @@ using System;
 namespace CustomerServices.Presenter.Controllers
 {
     [ApiController]
-    [Authorize]
+    //[Authorize]
     [Route("api/Payment")]
 
     public class PaymentController : ControllerBase

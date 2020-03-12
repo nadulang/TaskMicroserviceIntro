@@ -36,7 +36,7 @@ namespace CustomerServices
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CustomerContext>(options => options.UseNpgsql("Host=127.0.0.1;Database=customerdb;Username=postgres;Password=docker"));
+            services.AddDbContext<CustomerContext>(options => options.UseNpgsql(Configuration.GetConnectionString("defaultConnection")));
             services.AddControllers();
             services.AddMvc()
                    .AddFluentValidation(opt => opt.RegisterValidatorsFromAssemblyContaining(typeof(CreatePaymentCommandValidation)));
