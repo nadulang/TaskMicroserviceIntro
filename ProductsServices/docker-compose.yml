@@ -1,8 +1,14 @@
-version: '3.4'
+version: '3'
 
 services:
-  productsservices:
-    image: ${DOCKER_REGISTRY-}productsservices
-    build:
-      context: .
-      dockerfile: ProductsServices/Dockerfile
+  postgresdb:
+    image: postgres
+    networks: 
+      - orchestra
+    environment: 
+      POSTGRES_PASSWORD: docker
+    ports: 
+      - "5432:5432"
+  networks:
+    orchestra:
+      external: true

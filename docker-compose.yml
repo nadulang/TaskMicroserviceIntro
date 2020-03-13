@@ -1,0 +1,33 @@
+version: '3'
+
+services: 
+    product-service:
+        image: nadulang/productservice
+        deploy:
+            replicas: 2
+        networks: 
+            - orchestra
+        ports:
+            - "2000:5000"
+
+    merchant-service:
+        image: nadulang/merchantservice
+        deploy:
+            replicas: 2
+        networks: 
+            - orchestra
+        ports: 
+            - "6000:4000"
+
+    customer-service:
+        image: nadulang/customerservice
+        deploy:
+            replicas: 2
+        networks: 
+            - orchestra
+        ports: 
+            - "7000:3000"
+
+networks: 
+    orchestra:
+        external: true
